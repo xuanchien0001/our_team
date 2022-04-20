@@ -12,5 +12,7 @@ window.addEventListener("scroll", function () {
   }
 });
 domElement("#sidebarCollapse").onclick = () => {
-  domElement(".container .nav-brand").classList.toggle("d-md-none");
+  domElement("#sidebar .active")
+    ? domElement(".container .nav-brand").classList.add("d-none")
+    : domElement(".container .nav-brand").classList.remove("d-none");
 };

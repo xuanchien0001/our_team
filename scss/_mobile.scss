@@ -11,5 +11,18 @@ $res_320: "only screen and (min-width: 320px) and (max-width: 575px)";
       background: url("./../img/images/yellow_top_wave_01.png") no-repeat left
         top / 50%;
     }
+    .col-lg-6 {
+      h1 {
+        @include text($text_color, 3rem, $fw_1);
+      }
+    }
+  }
+  footer {
+    background: url("./../img/images/footer_background.jpg") no-repeat center /
+      cover;
+    height: 1200px;
+  }
+  .contact {
+    display: none !important;
   }
 }

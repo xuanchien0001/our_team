@@ -67,20 +67,44 @@
     max-width: 1260px;
   }
 
+  #about_us {
+    margin-top: -5rem;
+  }
   #about_us .bg {
     background: url("./../img/images/yellow_top_wave_01.png") no-repeat left top/110%;
   }
+  #about_us .col-lg-6 {
+    margin-top: 5rem;
+  }
+  #about_us .col-lg-6 h1 {
+    color: #181818;
+    font-size: 4rem;
+    font-weight: 700;
+  }
 
   footer {
-    background: url("./../img/images/footer_background.jpg") no-repeat top center/100%;
+    background: url("./../img/images/footer_background.jpg") no-repeat top center/cover;
+    height: 500px;
   }
 }
 @media only screen and (min-width: 767px) and (max-width: 1199px) {
   #about_us {
     overflow: hidden;
+    margin-top: -4.5rem;
+    position: relative;
+    z-index: -1;
   }
   #about_us .bg {
     background: url("./../img/images/yellow_top_wave_01.png") no-repeat left top/50%;
+    margin-top: 5rem;
+  }
+  #about_us .col-lg-6 {
+    margin-top: 8rem;
+  }
+  #about_us .col-lg-6 h1 {
+    color: #181818;
+    font-size: 4rem;
+    font-weight: 700;
   }
 
   #list_user {
@@ -93,6 +117,7 @@
 
   footer {
     background: url("./../img/images/footer_background.jpg") no-repeat center/cover;
+    height: 824px;
   }
 
   .btn-primary-custom {
@@ -105,6 +130,20 @@
   }
   #about_us .bg {
     background: url("./../img/images/yellow_top_wave_01.png") no-repeat left top/50%;
+  }
+  #about_us .col-lg-6 h1 {
+    color: #181818;
+    font-size: 3rem;
+    font-weight: 900;
+  }
+
+  footer {
+    background: url("./../img/images/footer_background.jpg") no-repeat center/cover;
+    height: 1200px;
+  }
+
+  .contact {
+    display: none !important;
   }
 }
 .navbar {
@@ -134,7 +173,6 @@
 
 #about_us {
   background: url("./../img/images/Violet_top_left_wave.png") no-repeat bottom/100%;
-  margin-top: -5rem;
   position: relative;
   padding-bottom: 50px;
 }
@@ -146,18 +184,10 @@
   height: 300px;
   z-index: -1;
 }
-#about_us .col-lg-6 {
-  margin-top: 5rem;
-}
 #about_us .col-lg-6 h5 {
   color: #aa017e;
   font-size: 1rem;
   font-weight: 600;
-}
-#about_us .col-lg-6 h1 {
-  color: #181818;
-  font-size: 4rem;
-  font-weight: 700;
 }
 
 #list_user {

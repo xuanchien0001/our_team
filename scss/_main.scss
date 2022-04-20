@@ -30,7 +30,6 @@
 #about_us {
   background: url("./../img/images/Violet_top_left_wave.png") no-repeat bottom /
     100%;
-  margin-top: -5rem;
   position: relative;
   padding-bottom: 50px;
   .bg {
@@ -44,12 +43,8 @@
     //   110%;
   }
   .col-lg-6 {
-    margin-top: 5rem;
     h5 {
       @include text($color_primary, $fs_normal, $fw_3);
-    }
-    h1 {
-      @include text($text_color, 4rem, $fw_2);
     }
   }
 }
