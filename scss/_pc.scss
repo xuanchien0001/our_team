@@ -10,6 +10,10 @@ $res_1200: "only screen and (min-width: 1200px)";
   #sidebarCollapse {
     display: none;
   }
+  .navbar {
+    position: relative;
+    z-index: 2;
+  }
   .container {
     max-width: 1260px;
   }

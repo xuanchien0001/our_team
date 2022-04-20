@@ -63,6 +63,11 @@
     display: none;
   }
 
+  .navbar {
+    position: relative;
+    z-index: 2;
+  }
+
   .container {
     max-width: 1260px;
   }
@@ -264,6 +269,33 @@ footer .list-unstyled {
 footer .list-unstyled li {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
+footer .btn-footer {
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 0.8rem 1rem;
+  border-radius: 1.5rem;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+footer .bg-light {
+  border: 1px solid #fff;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+footer .bg-light:hover {
+  background-color: #aa017e !important;
+  color: #fff;
+}
+footer input.btn-footer {
+  color: white;
+}
+footer input.btn-footer:focus-visible {
+  outline: none;
+}
+footer input.btn-footer::placeholder {
+  color: white;
+}
+
 #sidebar a {
   color: black;
   background-color: transparent;

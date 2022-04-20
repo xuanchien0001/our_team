@@ -122,6 +122,30 @@ footer {
     }
   }
   .btn-footer {
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 0.8rem 1rem;
+    border-radius: 1.5rem;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .bg-light {
+    border: 1px solid #fff;
+    cursor: pointer;
+    transition: all 0.3s;
+    &:hover {
+      background-color: $color_primary !important;
+      color: #fff;
+    }
+  }
+  input.btn-footer {
+    color: white;
+    &:focus-visible {
+      outline: none;
+    }
+    &::placeholder {
+      color: white;
+    }
   }
 }
 
