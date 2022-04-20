@@ -1,0 +1,26 @@
+$res_1200: "only screen and (min-width: 1200px)";
+@mixin PC() {
+  @media #{$res_1200} {
+    @content;
+  }
+}
+
+@include PC() {
+  #sidebar,
+  #sidebarCollapse {
+    display: none;
+  }
+  .container {
+    max-width: 1260px;
+  }
+  #about_us {
+    .bg {
+      background: url("./../img/images/yellow_top_wave_01.png") no-repeat left
+        top / 110%;
+    }
+  }
+  footer {
+    background: url("./../img/images/footer_background.jpg") no-repeat top
+      center / 100%;
+  }
+}

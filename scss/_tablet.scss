@@ -1,0 +1,28 @@
+$res_768: "only screen and (min-width: 767px) and (max-width: 1199px)";
+@mixin Tablet() {
+  @media #{$res_768} {
+    @content;
+  }
+}
+@include Tablet {
+  #about_us {
+    overflow: hidden;
+    .bg {
+      background: url("./../img/images/yellow_top_wave_01.png") no-repeat left
+        top / 50%;
+    }
+  }
+  #list_user {
+    overflow: hidden;
+  }
+  .contact {
+    display: none !important;
+  }
+  footer {
+    background: url("./../img/images/footer_background.jpg") no-repeat center /
+      cover;
+  }
+  .btn-primary-custom {
+    width: 100%;
+  }
+}
