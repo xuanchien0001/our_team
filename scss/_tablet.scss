@@ -29,6 +29,10 @@ $res_768: "only screen and (min-width: 767px) and (max-width: 1199px)";
   .contact {
     display: none !important;
   }
+  #find_course {
+    background: url("./../img/images/accent_bottom_wave_01.png") no-repeat left
+      bottom / cover;
+  }
   footer {
     background: url("./../img/images/footer_background.jpg") no-repeat center /
       cover;

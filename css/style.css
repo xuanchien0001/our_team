@@ -87,6 +87,10 @@
     font-weight: 700;
   }
 
+  #find_course {
+    background: url("./../img/images/accent_bottom_wave_01.png") no-repeat bottom/100%;
+  }
+
   footer {
     background: url("./../img/images/footer_background.jpg") no-repeat top center/cover;
     height: 500px;
@@ -120,6 +124,10 @@
     display: none !important;
   }
 
+  #find_course {
+    background: url("./../img/images/accent_bottom_wave_01.png") no-repeat left bottom/cover;
+  }
+
   footer {
     background: url("./../img/images/footer_background.jpg") no-repeat center/cover;
     height: 824px;
@@ -140,6 +148,11 @@
     color: #181818;
     font-size: 3rem;
     font-weight: 900;
+  }
+
+  #find_course {
+    background: url("./../img/images/accent_bottom_wave_01.png") no-repeat left bottom/250%;
+    padding-bottom: 1.5rem;
   }
 
   footer {
@@ -231,9 +244,6 @@
   font-weight: 400;
 }
 
-#find_course {
-  background: url("./../img/images/accent_bottom_wave_01.png") no-repeat bottom/100%;
-}
 #find_course .p-4 {
   box-shadow: 0 0 4px 1px #ccc;
   width: 90%;

@@ -30,6 +30,10 @@ $res_1200: "only screen and (min-width: 1200px)";
       }
     }
   }
+  #find_course {
+    background: url("./../img/images/accent_bottom_wave_01.png") no-repeat
+      bottom / 100%;
+  }
   footer {
     background: url("./../img/images/footer_background.jpg") no-repeat top
       center / cover;

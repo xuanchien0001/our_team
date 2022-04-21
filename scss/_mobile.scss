@@ -17,6 +17,12 @@ $res_320: "only screen and (min-width: 320px) and (max-width: 575px)";
       }
     }
   }
+  #find_course {
+    background: url("./../img/images/accent_bottom_wave_01.png") no-repeat left
+      bottom / 250%;
+    // background-color: red;
+    padding-bottom: 1.5rem;
+  }
   footer {
     background: url("./../img/images/footer_background.jpg") no-repeat center /
       cover;
