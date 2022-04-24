@@ -1,6 +1,5 @@
 const domElement = (element) => document.querySelector(element);
 window.addEventListener("scroll", function () {
-  console.log(window.scrollY);
   if (window.scrollY > 300) {
     domElement(".navbar").style.backgroundColor = "#fff";
     domElement(".navbar").classList.add("fixed-top");
