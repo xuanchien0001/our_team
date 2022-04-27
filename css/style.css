@@ -4,16 +4,7 @@
   border: 1px solid #aa017e;
   background-color: #aa017e;
   overflow: hidden;
-  transition: all 0.5s;
-}
-.btn-primary-custom::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background-color: #aa017e;
+  transition: all 0.2s;
 }
 .btn-primary-custom::before {
   content: "";
@@ -23,16 +14,14 @@
   bottom: 0;
   right: 0;
   background-color: white;
-  transform: scale(0);
-  transition: all 0.5s linear;
+  transform: scale(0.7);
+  opacity: 0;
+  transition: all 0.2s linear;
   border-radius: 24px;
-}
-.btn-primary-custom:hover::after {
-  display: none;
 }
 .btn-primary-custom:hover::before {
   transform: scale(1);
-  transition: all 0.6s;
+  opacity: 1;
 }
 .btn-primary-custom:hover .button-link {
   color: #aa017e;
@@ -55,6 +44,15 @@
 }
 .social a:hover {
   color: #aa017e;
+}
+
+.social.text-white a {
+  display: inline-block;
+  font-size: 0.875rem;
+  padding: 0 0.2rem;
+}
+.social.text-white a:hover {
+  color: black;
 }
 
 @media only screen and (min-width: 1200px) {
@@ -285,15 +283,32 @@ footer .btn-footer {
   border-radius: 1.5rem;
   width: 100%;
   margin-bottom: 1rem;
-}
-footer .bg-light {
-  border: 1px solid #fff;
+  position: relative;
   cursor: pointer;
+}
+footer .btn-footer:hover::before {
+  transform: scale(1);
+  opacity: 1;
+}
+footer .btn-footer:hover a {
+  color: white;
+}
+footer .btn-footer::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #aa017e;
+  border-radius: 1.5rem;
+  transform: scale(0.7);
+  opacity: 0;
   transition: all 0.3s;
 }
-footer .bg-light:hover {
-  background-color: #aa017e !important;
-  color: #fff;
+footer .btn-footer a {
+  z-index: 3;
+  position: relative;
 }
 footer input.btn-footer {
   color: white;
